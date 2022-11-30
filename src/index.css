@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Roboto', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+:root {
+
+  --primaryColor: #16324F;
+  --secondaryColor: #CED3DC;
+  --textWhite: #FFFFFF;
+  --orangeColor: #FD5B00;
+
+}
+
+
+
+/* NavBar */
+
+nav.NavBarAll {
+  background-color: var(--primaryColor);
+  height: 100%;
+  width: 100%;
+}
+
+div.cvButton{
+  background-color: var(--orangeColor);
+  text-align: center;
+  border-radius: 60px;
+}
+
+a.cvButton{
+  color: var(--secondaryColor);
+  font-weight: 700;
+}
+
+/*effect-underline*/
+
+a.effect-underline:after {
+	content: '';
+  position: absolute;
+  right: 2.4%;
+  display: inline-block;
+  height: 1em;
+  width: 5%;
+  border-bottom: 1px solid;
+  margin-top: 10px;
+  opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: scale(0,1);
+	transform: scale(0,1);
+}
+
+a.effect-underline:hover:after {
+  opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+
+/*effect-underline*/
+
+
+a.TitleNavbar{
+  color: var(--textWhite);
+  font-weight: 700;
+}
+
+/* NavBar */
+
+
+/* Div 1 */
+
+
+div.FirstDivBackground{
+  background-color: var(--primaryColor);
+  height: 100vh;
+  
+}
+
+
+/* Div 1 */
