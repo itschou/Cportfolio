@@ -1,12 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap'); /* font-family: 'Roboto', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Signika&display=swap'); /*  */
 
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Signika', sans-serif;
   padding: 0;
   margin: 0;
 }
+
+#NavBarPage{
+  display: none;
+}
+
+#AppPage{
+  display: none;
+}
+
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -31,6 +42,7 @@ nav.NavBarAll {
   background-color: var(--primaryColor);
   height: 100%;
   width: 100%;
+  margin-bottom: 0!important;
 }
 
 div.cvButton{
@@ -42,39 +54,19 @@ div.cvButton{
 a.cvButton{
   color: var(--secondaryColor);
   font-weight: 700;
+  font-size: 20px;
+  transition: 0.5s;
+  
 }
 
-/*effect-underline*/
-
-a.effect-underline:after {
-	content: '';
-  position: absolute;
-  right: 2.4%;
-  display: inline-block;
-  height: 1em;
-  width: 5%;
-  border-bottom: 1px solid;
-  margin-top: 10px;
-  opacity: 0;
-	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-	transition: opacity 0.35s, transform 0.35s;
-	-webkit-transform: scale(0,1);
-	transform: scale(0,1);
+a.cvButton:hover{
+  transform: scale(2);
 }
-
-a.effect-underline:hover:after {
-  opacity: 1;
-	-webkit-transform: scale(1);
-	transform: scale(1);
-}
-
-
-/*effect-underline*/
-
 
 a.TitleNavbar{
   color: var(--textWhite);
-  font-weight: 700;
+  font-weight: 400;
+  font-size: 20px;
 }
 
 /* NavBar */
@@ -88,6 +80,71 @@ div.FirstDivBackground{
   height: 100vh;
   
 }
+/* PRENOM ET NOM */
+p.text1{
+  color: var(--orangeColor);
+  display: inline-flex;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-right: 4px solid;
+  width: 401px;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 3s steps(22), blinking 0.5s infinite step-end alternate;
+}
+
+/* PRENOM ET NOM */
+
+/* WEB DEVELOPPER TEXT */
+
+p.text2{
+  color: var(--orangeColor);
+  display: inline-flex;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+/* WEB DEVELOPPER TEXT */
+
+/* Animation blink prenom et nom */
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blinking {
+  50% {
+    border-color: transparent;
+  }
+}
+
+/* Animation blink prenom et nom */
+
+
+.text-secondary{
+  color: var(--secondaryColor);
+  transition: 0.5s;
+}
+
+.text-primary{
+  color: var(--primaryColor)
+}
+
+a.text-secondary:hover{
+  color: var(--orangeColor);
+}
 
 
 /* Div 1 */
+
+
+/* DIV 2 */
+
+.SecondDivBackground{
+  background-color: var(--secondaryColor);
+  height: 100vh;
+}
+
+/* DIV 2 */
