@@ -1,5 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap'); /* font-family: 'Roboto', sans-serif; */
-@import url('https://fonts.googleapis.com/css2?family=Signika&display=swap'); /*  */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+/* font-family: 'Roboto', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Signika&display=swap');
+/*  */
 
 body {
   -webkit-font-smoothing: antialiased;
@@ -7,15 +9,49 @@ body {
   font-family: 'Signika', sans-serif;
   padding: 0;
   margin: 0;
+
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overflow-y: scroll;
+
 }
 
-#NavBarPage{
+body::-webkit-scrollbar {
   display: none;
 }
 
-#AppPage{
+
+
+
+#NavBarPage {
   display: none;
 }
+
+#AppPage {
+  display: none;
+
+
+}
+
+#parent::-webkit-scrollbar {
+  display: none;
+}
+
+#parent {
+  width: 100vw;
+  scroll-snap-type: y mandatory;
+  flex-basis: 100%;
+  max-height: 100vh;
+  scroll-snap-stop: always;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+}
+
+
+
+
 
 
 
@@ -35,6 +71,63 @@ code {
 }
 
 
+/* Animations */
+
+/* Scroll Pages */
+
+#parent::-webkit-scrollbar {
+  display: none;
+}
+
+
+#div1{
+  scroll-snap-align: center;
+}
+#div2{
+  scroll-snap-align: center;
+}
+#div3{
+  scroll-snap-align: center;
+}
+#div4{
+  scroll-snap-align: center;
+}
+
+
+/* Scroll Pages */
+
+
+/* Snow Fall */
+
+/* Snow Fall */
+
+
+/* Icons */
+.bounce {
+  display: inline-block;
+  position: relative;
+  animation: bounce .4s ease infinite alternate;
+}
+
+@keyframes bounce {
+  0% {
+    text-shadow:
+      0 5px 0 #ccc,
+      0 2px 3px rgba(0, 0, 0, 0);
+  }
+
+  100% {
+    transform: translateY(-20px);
+    text-shadow: 0 0px 0 transparent,
+      0 0px 20px rgba(0, 0, 0, 0);
+  }
+}
+
+/* Icons */
+
+/* Animations */
+
+
 
 /* NavBar */
 
@@ -42,28 +135,28 @@ nav.NavBarAll {
   background-color: var(--primaryColor);
   height: 100%;
   width: 100%;
-  margin-bottom: 0!important;
+  margin-bottom: 0 !important;
 }
 
-div.cvButton{
+div.cvButton {
   background-color: var(--orangeColor);
   text-align: center;
   border-radius: 60px;
 }
 
-a.cvButton{
+a.cvButton {
   color: var(--secondaryColor);
   font-weight: 700;
   font-size: 20px;
   transition: 0.5s;
-  
+
 }
 
-a.cvButton:hover{
+a.cvButton:hover {
   transform: scale(2);
 }
 
-a.TitleNavbar{
+a.TitleNavbar {
   color: var(--textWhite);
   font-weight: 400;
   font-size: 20px;
@@ -75,13 +168,14 @@ a.TitleNavbar{
 /* Div 1 */
 
 
-div.FirstDivBackground{
+div.FirstDivBackground {
   background-color: var(--primaryColor);
   height: 100vh;
-  
+
 }
+
 /* PRENOM ET NOM */
-p.text1{
+p.text1 {
   color: var(--orangeColor);
   display: inline-flex;
   text-transform: uppercase;
@@ -97,7 +191,7 @@ p.text1{
 
 /* WEB DEVELOPPER TEXT */
 
-p.text2{
+p.text2 {
   color: var(--orangeColor);
   display: inline-flex;
   text-transform: uppercase;
@@ -123,28 +217,72 @@ p.text2{
 /* Animation blink prenom et nom */
 
 
-.text-secondary{
+.text-secondary {
   color: var(--secondaryColor);
   transition: 0.5s;
 }
 
-.text-primary{
+.text-primary {
   color: var(--primaryColor)
 }
 
-a.text-secondary:hover{
+a.text-secondary:hover {
   color: var(--orangeColor);
 }
 
+
+.text-orange {
+  color: var(--orangeColor);
+}
 
 /* Div 1 */
 
 
 /* DIV 2 */
 
-.SecondDivBackground{
+.SecondDivBackground {
   background-color: var(--secondaryColor);
   height: 100vh;
 }
 
+.is-vertical-center {
+  display: -ms-flexbox;
+  align-items: center;
+}
+
 /* DIV 2 */
+
+
+/* DIV 3 */
+
+.ThreeDivBackground{
+  background-color: var(--primaryColor);
+  height: 100vh;
+
+}
+
+.checkedStar{
+  color: var(--orangeColor);
+}
+
+
+/* DIV 3 */
+
+
+/* DIV 4 */
+
+.Fourthdiv{
+  background-color: var(--secondaryColor);
+  height: 100vh;
+}
+
+.CodingSVG{
+  width: 80%;
+  height: 80%;
+}
+
+/* DIV 4 */
+
+
+
+

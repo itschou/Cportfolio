@@ -4,8 +4,12 @@ import $ from "jquery";
 
 
 import './index.css';
-import './loading.css'
-import './js/loading.js'
+import './loading.css';
+import './css/animationFall.scss';
+
+import './js/loading.js';
+import './js/snowfallAnimation.js';
+import './js/svgcoding.js';
 
 import App from './components/App';
 import Navbar from './components/Navbar';
@@ -19,8 +23,10 @@ root.render(
       Loading
       <span className='loading'></span>
     </div>
-    <Navbar name="MOHAMMED CHOUAIB AFIRI" />
-    <App />
+    <div id='parent'>
+      <Navbar name="MOHAMMED CHOUAIB AFIRI" />
+      <App />
+    </div>
   </React.StrictMode>
 );
 reportWebVitals();

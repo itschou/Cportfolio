@@ -1,0 +1,45 @@
+{
+    "programing": [
+        {
+            "name": "Python",
+            "logo": "python"
+        },
+        {
+            "name": "PHP",
+            "logo": "php"
+        },
+        {
+            "name": "ReactJs",
+            "logo": "react"
+        },
+        {
+            "name": "JavaScript",
+            "logo": "js"
+        },
+        {
+            "name": "HTML",
+            "logo": "html5"
+        },
+        {
+            "name": "CSS",
+            "logo": "css3-alt"
+        }
+    ],
+    "other": [
+        {
+            "name": "Adobe PHOTOSHOP",
+            "type": "solid",
+            "logo": "image"
+        },
+        {
+            "name": "Adobe Premiere pro",
+            "type": "solid",
+            "logo": "photo-film"
+        },
+        {
+            "name": "Microsoft [Word, Exel, PowerPoint]",
+            "type": "brands",
+            "logo": "microsoft"
+        }
+    ]
+}
