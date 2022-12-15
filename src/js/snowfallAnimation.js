@@ -1,7 +1,5 @@
 import $ from "jquery";
-// $('#testee').hide();
-
 
 setTimeout(() => {
-    $('.particle').fadeIn("slow");
-}, 4000);
+    $('.particle').hide().fadeIn("slow");
+}, 7000);

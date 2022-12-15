@@ -21,13 +21,8 @@ function App() {
       })
   }, [])
 
-  var programmingLength = config.programing.length
-  var otherLength = config.other.length
-
-  var stars = <h1 className={`p-1 text-secondary has-text-centered fa fa-star checked`}></h1>;
-
-  // https://itschou.github.io/projects.json
-
+  let programmingLength = config.programing.length
+  let otherLength = config.other.length
 
   return (
     <div id="AppPage">
@@ -57,9 +52,6 @@ function App() {
         {/* First DIV */}
 
         {/* SECOND DIV */}
-
-
-        {/* <div className="columns is-vcentered"> */}
 
 
         <div className="columns SecondDivBackground p-6 m-auto is-vcentered" id="div2">
@@ -100,7 +92,6 @@ function App() {
           </div>
 
         </div>
-        {/* </div> */}
 
 
         {/* SECOND DIV */}
@@ -112,9 +103,6 @@ function App() {
             <h1 className="title is-1 text-secondary has-text-centered">THEY TRUSTED ME</h1><br /><br /><br />
             <div className="columns has-text-centered">
 
-              {/* {resultat.map((item, index) => {
-
-            })} */}
 
               {resultat && resultat.map((item, index) => {
                 if (item.company == "true") {
@@ -183,15 +171,10 @@ function App() {
         {/* Fourth div */}
 
         <div id="div4" className="Fourthdiv">
-          <div className="CodingSVG">
-            <svg>
-              <image xlinkHref={codingSVG}></image>
-            </svg>
-
-          </div>
-        </div>
+          
 
         {/* Fourth div */}
+        </div>
 
 
       </div>

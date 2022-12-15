@@ -1,0 +1,6 @@
+projectKey=FS201P1
+serverUrl=http://localhost:9000
+serverVersion=9.7.1.62043
+dashboardUrl=http://localhost:9000/dashboard?id=FS201P1
+ceTaskId=AYUQbh7bvlS7JEtkAjMJ
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AYUQbh7bvlS7JEtkAjMJ
