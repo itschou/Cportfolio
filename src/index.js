@@ -7,8 +7,6 @@ import './loading.css';
 import './css/animationFall.scss';
 
 import './js/loading.js';
-import './js/snowfallAnimation.js';
-import './js/svgcoding.js';
 
 import App from './components/App';
 import Navbar from './components/Navbar';
