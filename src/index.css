@@ -263,21 +263,17 @@ a.text-secondary:hover {
 
 /* DIV 4 */
 
-.Fourthdiv{
+.FourthDivBackground{
   background-color: var(--secondaryColor);
   height: 100vh;
 }
 
 
+.FooterDiv{
+  text-align: center;
+}
+
 
 /* DIV 4 */
-
-
-
-/* Footer */
-
-
-
-/* Footer */
 
 
