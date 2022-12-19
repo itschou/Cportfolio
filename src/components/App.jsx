@@ -31,12 +31,12 @@ function App() {
 
         {/* First DIV */}
 
-        <div className="columns FirstDivBackground p-6 m-auto is-vcentered" id="div1">
+        <div className="columns is-mobile FirstDivBackground p-6 m-auto is-vcentered" id="div1">
           <div id="testee">
             <span className="particle particle-2"></span>
             <span className="particle particle-4"></span>
           </div>
-          <div className="column is-8 ">
+          <div className="column is-8">
             <h1 className="is-size-1 has-text-centered title is-1 text-secondary">ABOUT ME</h1>
             <p className="has-text-centered subtitle is-3 text-secondary">Hello ! my name is <p className="text1">afiri mohammed chouaib</p> and i am <p className="text2"> web developper </p>,<br /> you can trust me to solve and simplify your problems with a website.</p>
             <p className="text-secondary has-text-centered subtitle is-4"><q> with me everything is simplified </q></p>
@@ -54,14 +54,14 @@ function App() {
         {/* SECOND DIV */}
 
 
-        <div className="columns SecondDivBackground p-6 m-auto is-vcentered" id="div2">
+        <div className="columns is-mobile SecondDivBackground p-6 m-auto is-vcentered" id="div2">
 
-          <div className="column">
+          <div className="column is-three-quarters-mobile">
 
 
             <h1 className="is-size-1 has-text-centered title is-1 text-primary">SKILLS</h1><br />
             <h1 className="is-size-4 has-text-centered subtitle is-4 text-primary">Programming skills ( <b className="text-orange">{programmingLength}</b> )</h1><br />
-            <div className="has-text-centered columns is-desktop is-vcentered">
+            <div className="has-text-centered columns is-mobile">
               {config && config.programing.map((item, index) => {
                 return (
                   <div className="column" itemID={item} key={index}>
@@ -76,7 +76,7 @@ function App() {
             <br />
 
             <h1 className="is-size-4 has-text-centered subtitle is-4 text-primary">Other skills ( <b className="text-orange">{otherLength}</b> )</h1><br />
-            <div className="has-text-centered columns is-desktop is-vcentered">
+            <div className="has-text-centered columns is-mobile">
               {config && config.other.map((item, index) => {
                 return (
                   <div className="column" itemID={item} key={index}>
@@ -144,37 +144,36 @@ function App() {
             <nav class="level">
               <div class="level-item has-text-centered">
                 <div>
+                  <i class="fa-solid fa-network-wired text-secondary subtitle is-4 p-2"></i>
                   <p class="heading text-secondary">worked projects</p>
                   <p class="title text-orange">+{Object.keys(resultat).length}</p>
                 </div>
               </div>
               <div class="level-item has-text-centered">
                 <div>
+                  <i class="fa-regular fa-face-smile text-secondary subtitle is-4 p-2"></i>
                   <p class="heading text-secondary">satisfied customers</p>
                   <p class="title text-orange">+50</p>
                 </div>
               </div>
               <div class="level-item has-text-centered">
                 <div>
+                  <i class="fa-brands fa-github subtitle is-4 text-secondary p-2"></i>
                   <p class="heading text-secondary">open source projects</p>
                   <p class="title text-orange">+5</p>
                 </div>
               </div>
             </nav>
+            
+
           </div>
 
-
+              
         </div>
 
         {/* THIRD DIV */}
 
-        {/* Fourth div */}
-
-        <div id="div4" className="Fourthdiv">
-          
-
-        {/* Fourth div */}
-        </div>
+        
 
 
       </div>
