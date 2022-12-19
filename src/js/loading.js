@@ -10,6 +10,6 @@ $(window).on('load', function () {
         $("#NavBarPage").fadeIn("slow");
         $("#AppPage").fadeIn("slow");
         $("#loadingRing").fadeOut("fast");
-    }, 2000);
+    }, 500);
 
 })

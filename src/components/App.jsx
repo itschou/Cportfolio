@@ -6,6 +6,9 @@ import config from "../config.json";
 import { useEffect, useState } from "react";
 import axios from 'axios';
 
+import $ from "jquery";
+import Footer from './Footer';
+
 
 
 function App() {
@@ -30,12 +33,12 @@ function App() {
 
         {/* First DIV */}
 
-        <div className="columns is-mobile FirstDivBackground p-6 m-auto is-vcentered" id="div1">
-          <div id="testee">
+        <div className="columns is-mobile FirstDivBackground p-6 m-auto is-vcentered has-text-centered" id="div1" onMouseEnter={() => $("#particules").show("slow")}>
+          <div id="particules">
             <span className="particle particle-2"></span>
             <span className="particle particle-4"></span>
           </div>
-          <div className="column is-8">
+          <div className="column is-8 is-align-content-center	has-text-centered mt-5 p-6">
             <h1 className="is-size-1 has-text-centered title is-1 text-secondary">ABOUT ME</h1>
             <p className="has-text-centered subtitle is-3 text-secondary">Hello ! my name is <p className="text1">afiri mohammed chouaib</p> and i am <p className="text2"> web developper </p>,<br /> you can trust me to solve and simplify your problems with a website.</p>
             <p className="text-secondary has-text-centered subtitle is-4"><q> with me everything is simplified </q></p>
@@ -43,7 +46,7 @@ function App() {
           </div>
           <div className="column is-centered">
             <figure className="image is-1by1 is-flex is-justify-content-center">
-              <img src={meImage} />
+              <img src={meImage} className="is-hidden-mobile" />
             </figure>
           </div>
         </div>
@@ -53,7 +56,7 @@ function App() {
         {/* SECOND DIV */}
 
 
-        <div className="columns is-mobile SecondDivBackground p-6 m-auto is-vcentered" id="div2">
+        <div className="columns is-mobile SecondDivBackground p-6 m-auto is-vcentered" id="div2" onMouseEnter={() => $("#particules").hide("fast")}>
 
           <div className="column is-three-quarters-mobile">
 
@@ -63,7 +66,7 @@ function App() {
             <div className="has-text-centered columns is-mobile">
               {config && config.programing.map((item, index) => {
                 return (
-                  <div className="column" itemID={item} key={index}>
+                  <div className="column" key={index}>
                     <span className={"title bounce is-1 p-3  fa-brands fa-" + item.logo}></span>
                     <div className="subtitle is-4">{item.name}</div>
                   </div>
@@ -78,7 +81,7 @@ function App() {
             <div className="has-text-centered columns is-mobile">
               {config && config.other.map((item, index) => {
                 return (
-                  <div className="column" itemID={item} key={index}>
+                  <div className="column" key={index}>
                     <span className={`title is-1 p-3 fa-${item.type} fa-` + item.logo}></span>
                     <div className="subtitle is-4">{item.name}</div>
                   </div>
@@ -97,10 +100,11 @@ function App() {
 
         {/* THIRD DIV */}
 
-        <div className="columns is-mobile ThreeDivBackground p-6 m-auto is-vcentered" id="div3">
+        <div className="columns is-mobile ThreeDivBackground p-6 m-auto is-vcentered" id="div3" onMouseEnter={() => $("#particules").show("slow")}>
           <div className="column">
-            <h1 className="title is-1 text-secondary has-text-centered">THEY TRUSTED ME</h1>
-            <div className="columns has-text-centered">
+            <br /><br /><br />
+            <h1 className="title is-1 text-secondary has-text-centered ">THEY TRUSTED ME</h1>
+            <div className="columns is-mobile has-text-centered">
 
 
               {resultat && resultat.map((item, index) => {
@@ -108,8 +112,8 @@ function App() {
 
 
                   return (
-                    <div className="column" key={item.id}>
-                      <figure className="image is-128x128 has-text-centered is-inline-block">
+                    <div className="column" key={index}>
+                      <figure className="image is-64x64 has-text-centered is-inline-block">
                         <img className="is-rounded" src={require('../images/companies/' + item.idLogo + '.png')} />
                       </figure>
                       <h1 className="title is-4 text-secondary">{item.Nom}</h1>
@@ -118,17 +122,17 @@ function App() {
                       <h1 className="text-secondary is-uppercase">technologies:</h1>
                       {item.technologies.map(tech => {
                         return (
-                          <i key={item.id} className={`p-1 text-secondary has-text-centered fa-${tech.type} fa-` + tech.icon}></i>
+                          <i className={`p-1 text-secondary has-text-centered fa-${tech.type} fa-` + tech.icon}></i>
                         )
 
                       })}
                       <br /><br />
 
                       <h1 className="text-secondary is-uppercase">customer rating:</h1>
-                      {[...Array(item.rating)].map((e, i) => { return (<span class="fa fa-star checkedStar"></span>) })} {[...Array(5 - item.rating)].map((e, i) => { return (<span class="fa-regular fa-star text-orange"></span>) })}
+                      {[...Array(item.rating)].map((e, i) => { return (<span className="fa fa-star checkedStar"></span>) })} {[...Array(5 - item.rating)].map((e, i) => { return (<span className="fa-regular fa-star text-orange"></span>) })}
                       <br /><br />
                       <h1 className="text-secondary is-uppercase">website:</h1>
-                      <a className="text-secondary title is-4" href={item.link}><i class="fa-solid fa-eye p-2"></i></a>
+                      <a className="text-secondary title is-4" href={item.link}><i className="fa-solid fa-eye p-2"></i></a>
 
                     </div>
 
@@ -140,39 +144,42 @@ function App() {
             </div>
             <br />
 
-            <nav class="level">
-              <div class="level-item has-text-centered">
+            <nav className="level has-text-centered">
+              <div className="level-item has-text-centered is-inline-block p-2">
                 <div>
-                  <i class="fa-solid fa-network-wired text-secondary subtitle is-4 p-2"></i>
-                  <p class="heading text-secondary">worked projects</p>
-                  <p class="title text-orange">+{Object.keys(resultat).length}</p>
+                  <i className="fa-solid fa-network-wired text-secondary subtitle is-4 p-2"></i>
+                  <p className="heading text-secondary">worked projects</p>
+                  <p className="title text-orange">+{Object.keys(resultat).length}</p>
                 </div>
               </div>
-              <div class="level-item has-text-centered">
+              <div className="level-item has-text-centered is-inline-block p-2">
                 <div>
-                  <i class="fa-regular fa-face-smile text-secondary subtitle is-4 p-2"></i>
-                  <p class="heading text-secondary">satisfied customers</p>
-                  <p class="title text-orange">+50</p>
+                  <i className="fa-regular fa-face-smile text-secondary subtitle is-4 p-2"></i>
+                  <p className="heading text-secondary">satisfied customers</p>
+                  <p className="title text-orange">+50</p>
                 </div>
               </div>
-              <div class="level-item has-text-centered">
+              <div className="level-item has-text-centered is-inline-block p-2">
                 <div>
-                  <i class="fa-brands fa-github subtitle is-4 text-secondary p-2"></i>
-                  <p class="heading text-secondary">open source projects</p>
-                  <p class="title text-orange">+5</p>
+                  <i className="fa-brands fa-github subtitle is-4 text-secondary p-2"></i>
+                  <p className="heading text-secondary">open source projects</p>
+                  <p className="title text-orange">+5</p>
                 </div>
               </div>
             </nav>
-            
 
+            <Footer />
+            
           </div>
 
-              
+
+
+
         </div>
 
         {/* THIRD DIV */}
 
-        
+
 
 
       </div>

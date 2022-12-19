@@ -11,6 +11,7 @@ import './js/loading.js';
 import App from './components/App';
 import Navbar from './components/Navbar';
 
+
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -23,6 +24,7 @@ root.render(
     <div id='parent'>
       <Navbar name="MOHAMMED CHOUAIB AFIRI" />
       <App />
+      
     </div>
   </React.StrictMode>
 );
