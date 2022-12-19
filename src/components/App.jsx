@@ -97,7 +97,7 @@ function App() {
 
         {/* THIRD DIV */}
 
-        <div className="columns ThreeDivBackground p-6 m-auto is-vcentered" id="div3">
+        <div className="columns is-mobile ThreeDivBackground p-6 m-auto is-vcentered" id="div3">
           <div className="column">
             <h1 className="title is-1 text-secondary has-text-centered">THEY TRUSTED ME</h1>
             <div className="columns has-text-centered">
