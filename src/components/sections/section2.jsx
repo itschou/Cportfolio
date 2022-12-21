@@ -8,7 +8,7 @@ let otherLength = config.other.length
 
 
 export const section2 = (
-    <div className="columns is-mobile SecondDivBackground p-6 m-auto is-vcentered" id="div2" onMouseEnter={() => $("#particules").hide("fast")}>
+    <div className="columns SecondDivBackground p-6 m-auto is-vcentered" id="div2" onMouseEnter={() => $("#particules").hide("fast")}>
 
         <div className="column">
 
@@ -20,7 +20,7 @@ export const section2 = (
                     return (
                         <div className="column" key={index}>
                             <span className={"title bounce is-1 p-3  fa-brands fa-" + item.logo}></span>
-                            <div className="subtitle is-4">{item.name}</div>
+                            <span className="subtitle is-4 is-hidden-mobile">{item.name}</span>
                         </div>
 
                     )
