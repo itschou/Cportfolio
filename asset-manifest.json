@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/Portfolio/static/css/main.07f9d614.css",
+    "main.js": "/Portfolio/static/js/main.6a8ca3c8.js",
+    "static/js/787.a22df009.chunk.js": "/Portfolio/static/js/787.a22df009.chunk.js",
+    "static/media/cv2.pdf": "/Portfolio/static/media/cv2.aa89ca2b0bd1b06ee1d0.pdf",
+    "static/media/prestigebike.png": "/Portfolio/static/media/prestigebike.e255e7a3c0ef7c80ccba.png",
+    "static/media/Photo.jpeg": "/Portfolio/static/media/Photo.97dce4fe0d1b9320860b.jpeg",
+    "static/media/coding.svg": "/Portfolio/static/media/coding.867d295093c33be2981c4ad56f2b567c.svg",
+    "static/media/contacte.svg": "/Portfolio/static/media/contacte.c04324e42136db771787e500d2417787.svg",
+    "index.html": "/Portfolio/index.html",
+    "main.07f9d614.css.map": "/Portfolio/static/css/main.07f9d614.css.map",
+    "main.6a8ca3c8.js.map": "/Portfolio/static/js/main.6a8ca3c8.js.map",
+    "787.a22df009.chunk.js.map": "/Portfolio/static/js/787.a22df009.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.07f9d614.css",
+    "static/js/main.6a8ca3c8.js"
+  ]
+}
