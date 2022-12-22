@@ -189,7 +189,7 @@ p.text1 {
   width: 320px;
   white-space: nowrap;
   overflow: hidden;
-  animation: typing 3s steps(22), blinking 0.5s infinite step-end alternate;
+  animation: typing 2s steps(22), blinking 0.5s infinite step-end alternate;
 }
 
 
