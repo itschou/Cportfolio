@@ -1,12 +1,8 @@
 import '../css/animationFall.scss';
 
-
-
 import React from 'react';
 
-
 import { modal } from '../js/modal.js';
-
 
 import { section1 } from "./sections/section1";
 import { section2 } from "./sections/section2";
@@ -14,13 +10,7 @@ import Section3 from "./sections/Section3";
 import Section4 from "./sections/Section4";
 
 
-
-
-
 class App extends React.Component {
-
-
-  
 
 
   render() {
@@ -28,44 +18,25 @@ class App extends React.Component {
     return (
       <div id="AppPage" >
 
-
         {/* MODAL */}
-
-        {modal}
-
+          {modal}
         {/* MODAL */}
 
         {/* First DIV */}
-
-        {section1}
-
+          {section1}
         {/* First DIV */}
 
         {/* SECOND DIV */}
-
-
-        {section2}
-
-
+          {section2}
         {/* SECOND DIV */}
 
         {/* THIRD DIV */}
-
-        <Section3 />
-
-
+          <Section3 />
         {/* THIRD DIV */}
 
-
         {/* Fourth DIV */}
-
-        <Section4 />
-
-
+          <Section4 />
         {/* Fourth DIV */}
-
-
-
 
       </div >
     );

@@ -10,7 +10,7 @@ export const section1 =  (
         </div>
         <div className="column has-text-centered p-6">
             <h1 className="is-size-1 has-text-centered title is-1 text-secondary ">ABOUT ME</h1>
-            <p className="has-text-centered subtitle is-3 text-secondary">Hello ! my name is <p className="text1">afiri mohammed chouaib</p> and i am <p className="text2"> web developper </p>,<br /> you can trust me to solve and simplify your problems with a website.</p>
+            <p className="has-text-centered subtitle is-3 text-secondary">Hello ! my name is <p className="text1">mohammed chouaib</p> and i am <p className="text2"> web developper </p>,<br /> you can trust me to solve and simplify your problems with a website.</p>
             <p className="text-secondary has-text-centered subtitle is-4"><q> with me everything is simplified </q></p>
             <p className="has-text-centered"><a href="https://ma.linkedin.com/in/mohammed-chouaib-afiri-5016b4213" className="is-size-1 text-secondary p-2"><i className="fa-brands fa-linkedin"></i></a> <a href="" className="is-size-1 text-secondary p-2"><i className="fa-brands fa-github"></i></a></p>
         </div>

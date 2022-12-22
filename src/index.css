@@ -186,8 +186,7 @@ p.text1 {
   text-transform: uppercase;
   font-weight: 700;
   border-right: 4px solid;
-  /* width: 401px; */
-  width: 10%;
+  width: 320px;
   white-space: nowrap;
   overflow: hidden;
   animation: typing 3s steps(22), blinking 0.5s infinite step-end alternate;
